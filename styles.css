@@ -1,1 +1,49 @@
 /*  your css code here. If applicable */
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 80px);
+  gap: 5px;
+}
+
+#grid > div{
+  background: green;
+  color: white;
+  font-size: 20px;
+}
+#grid >div:nth-child(2){
+ grid-column: span 4;
+}
+
+#grid > div:nth-child(3){
+	grid-row : span 4
+}
+
+#grid > div:nth-child(4){
+	grid-column : span 1
+}
+#grid > div:nth-child(5){
+	grid-column : span 2
+}
+#grid > div:nth-child(6){
+	grid-column : span 2
+}
+#grid > div:nth-child(11){
+	grid-column : span 3
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
